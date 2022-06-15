@@ -23,6 +23,8 @@ class Cliente(models.Model):
     data_de_nascimento = models.DateField()
     email = models.EmailField()
     cpf = models.PositiveBigIntegerField()
+    telefone = models.CharField(max_length=100)
+    endereco = models.TextField()
     
 
     
